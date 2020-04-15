@@ -1,8 +1,5 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, Inject } from '@nestjs/common';
+import { Connection, KNEX_CONNECTION } from '@willsoto/nestjs-objection';
 
 @Injectable()
-export class AppService {
-  getHello(): string {
-    return 'Hello Worlda!';
-  }
-}
+export class AppService {}
